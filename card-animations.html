@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 200px;
+            width:200px;
+            perspective: 200px;
+        }
+        .container{
+             height:200px;
+            width:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: cube 10s linear  infinite ;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="box box1">Front</div>
+            <div  class="box box2">Back</div>
+            <div  class="box box3">Frent</div>
+            <div  class="box box4">Back</div>
+            <div  class="box box5">Front</div>
+            <div  class="box box6">Back</div>
+            <div  class="box box7">Frent</div>
+            <div  class="box box8">Back</div>
+        </div>
+    </div>
+</body>
+</html>

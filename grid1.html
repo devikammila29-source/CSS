@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:250px;
+            width:450px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(16,20px);
+            grid-template-rows: 30px 70px 80px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        }
+        .bb1{
+            background-color: red;
+            grid-column:1/6;
+        }
+        .bb2{
+            background-color: orangered;
+             grid-column: 6/11;
+        }
+        .bb3{
+            background-color: orange;
+             grid-column: 11/16;
+        }
+        .bb4{
+            background-color: green;
+             grid-column: 1/6;
+        }
+        .bb5{
+            background-color: rgb(9, 128, 96);
+             grid-column: 6/11;
+        }
+        .bb6{
+            background-color: rgb(0, 189, 138);
+             grid-column: 11/16;
+        }
+        .con{
+            height:250px;
+            width:450px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(16,20px);
+            grid-template-rows: 30px 70px 80px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        
+        }
+        .bbb1{
+            background-color: red;
+            grid-column: 1/11; 
+        }
+        .bbb2{
+             background-color: orange;
+            grid-column: 11/16;
+            grid-row: 2/4;
+        }
+        .bbb3{
+              background-color: rgb(9, 128, 96);
+            grid-column: 1/6;
+        }
+        .bbb4{
+            background-color: rgb(0, 189, 138);
+            grid-column: 6/11;
+        }
+        .cont{
+             height:250px;
+            width:450px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(16,20px);
+            grid-template-rows: 30px 70px 80px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        }
+        .box2{
+            background-color: orange;
+            grid-column: 1/16;
+        }
+        .box3{
+          background-color: rgb(9, 128, 96);
+          grid-column: 1/6;
+        }
+        .box4{
+            background-color: red;
+            grid-column: 6/16;
+        }
+        .box5{
+           background-color: rgb(0, 189, 138);
+           grid-column: 1/16;  
+        }
+        .cont{
+             height:250px;
+            width:450px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(16,20px);
+            grid-template-rows: 30px 70px 80px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        }
+        .bob2{
+            background-color: orange;
+            grid-column: 1/8;
+        }
+        .bob3{
+            background-color: red;
+            grid-column:8/16 ;
+        }
+        .bob4{
+        background-color: rgb(9, 128, 96);
+        grid-column: 1/5;
+        }
+        .bob5{
+            background-color: rgb(0, 189, 138);
+            grid-column: 5/16; 
+        }
+        .bob6{
+            background-color: orangered;
+            grid-column: 1/16; 
+        }
+        .conti{
+            height:210px;
+            width:530px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(17,20px);
+            grid-template-rows: 30px 50px 50px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/19;
+        }
+        .boo2{
+           background-color: rgb(9, 128, 96);  
+           grid-column: 1/4;
+        }
+        .boo3{
+           background-color: orangered;
+           grid-column: 4/7;  
+        }
+        .boo4{
+          background-color: rgb(0, 189, 138);
+          grid-column: 7/10;  
+        }
+        .boo5{
+            background-color: red;
+            grid-column: 10/13;
+        }
+        .boo6{
+          background-color: rgb(0, 189, 138);
+          grid-column: 13/16;  
+        }
+        .boo7{
+            background-color: orangered;
+            grid-column: 16/19;
+        }
+        .boo8{
+            background-color: orange;
+            grid-column: 1/4;
+        }
+        .boo9{
+          background-color: rgb(9, 128, 96); 
+          grid-column: 4/7;  
+        }
+        .boo10{
+            background-color: orangered;
+            grid-column: 7/10;
+        }
+        .boo11{
+          background-color: rgb(9, 128, 96); 
+          grid-column: 10/13;  
+        }
+        .boo12{
+            background-color: orange;
+            grid-column: 13/16;
+        }
+        .boo13{
+            background-color: red;
+            grid-column: 16/19;
+        }
+        .boo14{
+        background-color: rgb(9, 128, 96); 
+        grid-column: 1/4; 
+        }
+        .boo15{
+            background-color: red;
+            grid-column: 4/7;
+        }
+        .boo16{
+          background-color: rgb(0, 189, 138);
+          grid-column: 7/10;  
+        }
+        .boo17{
+            background-color: orange;
+            grid-column: 10/13;
+        }
+        .boo18{
+         background-color: rgb(9, 128, 96); 
+         grid-column: 13/16;   
+        }
+        .boo19{
+         background-color: rgb(0, 189, 138);
+         grid-column: 16/19;   
+        }
+        .contia{
+             height:450px;
+            width:550px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(18,20px);
+            grid-template-rows: 30px 50px 50px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        }
+        .b2{
+            background-color: red;
+            grid-column: 1/9;
+        }
+        .b3{
+             background-color: rgb(9, 128, 96); 
+             grid-column: 9/14;
+        }
+        .b4{
+            background-color: orange;
+            grid-column: 14/19;
+        }
+        .b5{
+            background-color: orangered;
+            grid-column: 1/5;
+        }
+        .b6{
+           background-color: rgb(9, 128, 96); 
+           grid-column:5/9 ;  
+        }
+        .b7{
+          background-color: rgb(0, 189, 138);
+          grid-column: 9/14;   
+        }
+        .b8{
+            background-color: orange;
+            grid-column: 1/9;
+            grid-row: 4/6;
+        }
+        .b9{
+            background-color: rgb(0, 189, 138);
+            grid-column: 9/14;
+           
+        }
+        .b10{
+            background-color: red;
+            grid-column: 14/19;
+        }
+
+        .b11{
+            background-color: rgb(9, 128, 96); 
+            grid-column: 9/14;
+            
+        }
+        .b12{
+         background-color: red;
+            grid-column: 1/14;
+        }
+        .b13{
+          background-color: rgb(0, 189, 138);
+          grid-column: 14/19;  
+        }
+        
+        .contian{
+             height:250px;
+            width:450px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(16,20px);
+            grid-template-rows: 30px 70px 120px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: rezd;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        }
+        .a{
+            background-color: orange;
+            grid-column: 1/8;
+        }
+        .a1{
+            background-color: rgb(0, 189, 138);
+            grid-column: 8/16;
+        }
+        .a2{
+            background-color: red;
+            grid-column: 1/8;
+            
+        }
+        .a3{
+          background-color: rgb(9, 128, 96);
+          grid-column: 8/16; 
+          display: grid;
+          grid-template-columns: repeat(5,40px);
+          grid-template-rows: 30px 50px;
+          box-sizing: border-box;
+          padding: 20px;
+          gap: 10px;
+         
+        }
+        .a4{
+            background-color: green;
+            grid-column: 1/5;
+        }
+        .a5{
+            background-color: rgb(30, 221, 30);
+            grid-column: 1/3;
+        }
+        .a6{
+            background-color: rgb(237, 154, 29);
+            grid-column: 3/5;
+        }
+        .contiane{
+            height:300px;
+            width:450px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(16,20px);
+            grid-template-rows: 30px 70px 80px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        }
+        .c{
+            background-color: red;
+            grid-column: 1/4;
+        }
+        .c1{
+            background-color: orange;
+            grid-column: 4/7;
+        }
+        .c2{
+            background-color: rgb(9, 195, 133);
+            grid-column: 7/10;
+        }
+        .c3{
+            background-color: rgb(6, 184, 104);
+            grid-column: 10/13;
+        }
+        .c4{
+            background-color: rgb(2, 122, 52);
+            grid-column: 13/16;
+        }
+        .c5{
+            background-color: orange;
+            grid-column: 1/4;
+        }
+        .c6{
+            background-color:red;
+            grid-column: 4/7;
+        }
+        .c7{
+            background-color: orangered;
+            grid-column: 7/16;
+        }
+        .c8{
+            background-color: rgb(9, 128, 96);
+            grid-column: 1/16;
+        }
+        .mon{
+            height:300px;
+            width:450px;
+            background-color: black;
+            display:grid;
+            grid-template-columns: repeat(16,20px);
+            grid-template-rows: 30px 70px 80px;
+            gap: 10px; 
+            padding: 20px;
+            margin: 20px;
+        }
+        .one{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .two{
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:orange;
+        }
+        .three{
+             height: 20px;
+            width:20px;
+            border-radius: 50%;
+            background-color:green;
+        }
+        .box1{
+            width:350px;
+            background-color: aliceblue;
+            grid-column: 4/12;
+        }
+        .d{
+            background-color: orange;
+            grid-column: 1/16;
+        }
+        .d1{
+            background-color: rgba(0, 128, 66, 0.858);
+            grid-column: 1/6;
+            grid-row: 3/6;
+        }
+        .d2{
+            background-color:rgb(2, 124, 84);
+            grid-column:6/16 ;
+        }
+        .d3{
+            background-color: red;
+            grid-column: 6/11;
+            grid-row: 4/6;
+        }
+        .d4{
+            background-color: orange;
+            grid-column: 11/16;
+             grid-row: 4/6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box bb1"></div>
+        <div class="box bb2"></div>
+        <div class="box bb3"></div>
+        <div class="box bb4"></div>
+        <div class="box bb5"></div>
+        <div class="box bb6"></div>
+    </div>
+    <div class="con">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box bbb1"></div>
+        <div class="box bbb2"></div>
+        <div class="box bbb3"></div>
+        <div class="box bbb4"></div>
+    </div>
+    <div class="cont">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+    <div class="cont">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box bob2"></div>
+        <div class="box bob3"></div>
+        <div class="box bob4"></div>
+        <div class="box bob5"></div>
+        <div class="box bob6"></div>
+     </div>
+     <div class="conti">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box boo2"></div>
+        <div class="box boo3"></div>
+        <div class="box boo4"></div>
+        <div class="box boo5"></div>
+        <div class="box boo6"></div>
+        <div class="box boo7"></div>
+        <div class="box boo8"></div>
+        <div class="box boo9"></div>
+        <div class="box boo10"></div>
+        <div class="box boo11"></div>
+        <div class="box boo12"></div>
+        <div class="box boo13"></div>
+        <div class="box boo14"></div>
+        <div class="box boo15"></div>
+        <div class="box boo16"></div>
+        <div class="box boo17"></div>
+        <div class="box boo18"></div>
+        <div class="box boo19"></div>
+     </div>
+      <div class="contia">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box b2"></div>
+        <div class="box b3"></div>
+        <div class="box b4"></div>
+        <div class="box b5"></div>
+        <div class="box b6"></div>
+        <div class="box b7"></div>
+        <div class="box b8"></div>
+        <div class="box b9"></div>
+        <div class="box b10"></div>
+        <div class="box b11"></div>
+        <div class="box b12"></div>
+        <div class="box b13"></div>
+        <div class="box b14"></div>
+     </div>
+        <div class="contian">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box a"></div>
+        <div class="box a1"></div>
+        <div class="box a2"></div>
+        <div class="box a3">
+        <div class="box a4"></div>
+        <div class="box a5"></div>
+        <div class="box a6"></div>
+        </div>
+     </div>
+     <div class="contiane">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box c"></div>
+        <div class="box c1"></div>
+        <div class="box c2"></div>
+        <div class="box c3"></div>
+        <div class="box c4"></div>
+        <div class="box c5"></div>
+        <div class="box c6"></div>
+        <div class="box c7"></div>
+        <div class="box c8"></div>
+     </div>
+      <div class="mon">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="box1"></div>
+        <div class="box d"></div>
+        <div class="box d1"></div>
+        <div class="box d2"></div>
+        <div class="box d3"></div>
+        <div class="box d4"></div>
+        <div class="box d5"></div>
+        <div class="box d6"></div>
+        <div class="box d7"></div>
+        <div class="box d8"></div>
+     </div>
+        
+</body>
+</html>
